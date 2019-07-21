@@ -1,11 +1,12 @@
 # My dotfiles
-Os: archlinux
+Os: *archlinux*
 
   1. wm: awesome wm, herbstluftwm
   2. shell: zsh
   3. terminal: urxvt
-  4. xsetkbmap: fr bepo (french/french)
-  5. firewall: shorewall, ipset
-  6. browser: firefox
+  4. Editeur: vim
+  5. xsetkbmap: fr bepo (french/french)
+  6. firewall: shorewall & ipset
+  7. browser: firefox
   
 and dark colors anywhere ;)
