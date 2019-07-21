@@ -1,0 +1,1 @@
+/home/luke/.zprezto/runcoms/zshrc
