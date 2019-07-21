@@ -1,0 +1,236 @@
+!--------------------------------------------
+!  __  __   _       __             _ _
+!  \ \/ /__| | ___ / _| __ _ _   _| | |_ ___
+!   \  // _` |/ _ \ |_ / _` | | | | | __/ __|
+! _ /  \ (_| |  __/  _| (_| | |_| | | |_\__ \
+!(_)_/\_\__,_|\___|_|  \__,_|\__,_|_|\__|___/
+!
+!.Xdefaults
+!Last modified: dimanche 21/07/2019 at 15:19:30
+!--------------------------------------------
+!
+! URxvt
+! General
+! urxvt slow
+URxvt*buffered: false
+!
+! no perl
+URxvt.perl-ext:
+URxvt.perl-ext-common: clipboard
+! Xft
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+Xft.autohint: 0
+URxvt*geometry: 120x40
+URxvt.internalBorder: 8
+URxvt*termName: rxvt-unicode-256color
+URxvt*loginShell: True
+URxvt.scrollBar: False
+URxvt*scrollTtyOutput: False
+URxvt*scrollTtyKeypress: True
+URxvt.secondaryScreen: 1
+
+URxvt.clipboard.autocopy: True
+
+!URxvt.secondaryScroll: 0
+!URxvt.secondaryWheel: 1
+!URxvt*saveLines: 12000
+URxvt*cursorBlink: False
+URxvt*urgentOnBell: True
+URxvt.cutchars: ()*,<>[]{}|`""''
+URxvt*font:xft:Anonymous\ Pro\ for\ Powerline:pixelsize=12:antialias=True,xft:Unifont:style=Medium:antialia=False,xft:FreeSerif:style=Regular,xft:Code2000:style=Regular
+URxvt*boldFont:xft:Anonymous\ Pro\ for\ Powerline:pixelsize=12:style=Bold:antialias=True,xft:Unifont:style=Medium:antialia=False, xft:FreeSerif:style=Bold,xft:Code2000:style=Regular
+URxvt*italicFont:xft:Anonymous\ Pro\ for\ Powerline:pixelsize=12:style=Italic:antialias=True,xft:Unifont:style=Medium:antialia=False,xft:FreeSerif:style=Italic,xft:Code2000:style=Regular
+URxvt*blodItalicFont:xft:Anonymous\ Pro\ for\ Pro\ for\ Powerline:pixelsize=12:Bold:Italic:antialias=True,xft:Unifont:style=Bold:antialia=False,xft:FreeSerif:style=Bold,xft:Code2000:style=Regular
+! Cursor
+!URxvt*cursorColor: #DCDCCC
+!!URxvt*cursorColor: yellow
+URxvt.cursorBlink: 1
+URxvt.cursorUnderline: 1
+! URLs
+!colorful man pages
+! IT > ITalic
+URxvt*.colorIT:    #87af5f
+! BD > BolD
+URxvt*.colorBD:    #d7d7d7
+! UL > UnderLine
+! URxvt*.colorUL:    #87afd7
+URxvt*.colorUL:    #c3bf9F
+! Pseudo Transparenc
+! URxvt*shading:    10
+! URxvt*transparent:True
+!URxvt.tintColor: white
+
+! Zenburn color-scheme
+URxvt*background:  #151515
+! URxvt*background:  #1f1f1f
+URxvt*foreground:  #d0d0d0
+! black + red
+! URxvt*color0:     #3f3f3f
+! URxvt*color0:      #1E2320
+! URxvt*color1:      #705050
+! green + yellow
+! URxvt*color2:      #60b48a
+! URxvt*color3:      #dfaf8f
+! blue + purple
+! URxvt*color4:      #506070
+! URxvt*color5:      #dc8cc3
+! cyan + white
+! URxvt*color6:      #8cd0d3
+! URxvt*color7:      #dcdccc
+! bright-black + bright-red
+! URxvt*color8:      #709080
+! URxvt*color9:      #dca3a3
+! bright-green + bright-yellow
+! URxvt*color10:     #c3bf9f
+! URxvt*color11:     #f0dfaf
+! bright-blue + bright-purple
+! URxvt*color12:     #94bff3
+! URxvt*color13:     #ec93d3
+! bright-cyan + bright-white
+! URxvt*color14:     #93e0e3
+! URxvt*color15:     #ffffff
+
+
+! special https://terminal.sexy/#FRUV0NDQFRUVrEFCkKlZ9L91ap-1qnWfdbWq0NDQUFBQrEFCkKlZ9L91ap-1qnWfdbWq9fX1
+*.foreground:   #d0d0d0
+*.background:   #151515
+*.cursorColor:  #d0d0d0
+
+! black
+*.color0:       #151515
+*.color8:       #505050
+
+! red
+*.color1:       #ac4142
+*.color9:       #ac4142
+
+! green
+*.color2:       #90a959
+*.color10:      #90a959
+
+! yellow
+*.color3:       #f4bf75
+*.color11:      #f4bf75
+
+! blue
+*.color4:       #6a9fb5
+*.color12:      #6a9fb5
+
+! magenta
+*.color5:       #aa759f
+*.color13:      #aa759f
+
+! cyan
+*.color6:       #75b5aa
+*.color14:      #75b5aa
+
+! white
+*.color7:       #d0d0d0
+*.color15:      #f5f5f5
+
+
+
+
+!{{{ XFONTSEL
+XFontSel*menu*showUnselectable:       False
+XFontSel*sampleText.background:      TEXTBG
+XFontSel*MenuButton.shadowWidth:          0
+XFontsel*Toggle*ToggleStyle:          check
+XFontsel*MenuButton*Justify:           left
+XFontsel*MenuButton*MenuButtonStyle: select
+!xfontsel*Font: -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-iso8859-2
+xfontsel.pane.commandBox.quitButton.background:           #777777
+xfontsel.pane.commandBox.quitButton.foreground:           snow
+xfontsel.pane.commandBox.ownButton.background:            orange3
+xfontsel.pane.commandBox.ownButton.foreground:            snow
+xfontsel.pane.commandBox.countLabel.background:           snow
+xfontsel.pane.viewPort.sampleText.background:             #777777
+xfontsel.pane.viewPort.sampleText.foreground:             snow
+xfontsel.pane.fieldBox.field0.background:  #777777
+xfontsel.pane.fieldBox.field0.foreground:  snow
+xfontsel.pane.fieldBox.field1.background:  #777777
+xfontsel.pane.fieldBox.field1.foreground:  snow
+xfontsel.pane.fieldBox.field2.background:  #777777
+xfontsel.pane.fieldBox.field2.foreground:  snow
+xfontsel.pane.fieldBox.field3.background:  #777777
+xfontsel.pane.fieldBox.field3.foreground:  snow
+xfontsel.pane.fieldBox.field4.background:  #777777
+xfontsel.pane.fieldBox.field4.foreground:  snow
+xfontsel.pane.fieldBox.field5.background:  #777777
+xfontsel.pane.fieldBox.field5.foreground:  snow
+xfontsel.pane.fieldBox.field6.background:  #777777
+xfontsel.pane.fieldBox.field6.foreground:  snow
+xfontsel.pane.fieldBox.field7.background:  #777777
+xfontsel.pane.fieldBox.field7.foreground:  snow
+xfontsel.pane.fieldBox.field8.background:  #777777
+xfontsel.pane.fieldBox.field8.foreground:  snow
+xfontsel.pane.fieldBox.field9.background:  #777777
+xfontsel.pane.fieldBox.field9.foreground:  snow
+xfontsel.pane.fieldBox.field10.background: #777777
+xfontsel.pane.fieldBox.field10.foreground: snow
+xfontsel.pane.fieldBox.field11.background: #777777
+xfontsel.pane.fieldBox.field11.foreground: snow
+xfontsel.pane.fieldBox.field12.background: #777777
+xfontsel.pane.fieldBox.field12.foreground: snow
+xfontsel.pane.fieldBox.field13.background: #777777
+xfontsel.pane.fieldBox.field13.foreground: snow
+xfontsel.pane.fieldBox*foreground:         #000000
+xfontsel.pane.fieldBox.MenuButton.borderWidth:   1
+xfontsel.pane.fieldBox.MenuButton.internalHeight:1
+xfontsel.pane.fieldBox.MenuButton.internalWidth: 2
+xfontsel.pane.fieldBox.MenuButton.shapeStyle:    rectangle
+!}}}
+!
+!
+!
+
+
+! Use a nice Truetype font and size by default... 
+xterm*faceName: DejaVu Sans Mono Book
+xterm*faceSize: 11
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: True
+
+! I like a LOT of scrollback...
+xterm*savelines: 16384
+
+! double-click to select whole URLs :D
+!    xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! DOS-box colours...
+xterm*foreground: rgb:a8/a8/a8
+xterm*background: rgb:00/00/00
+xterm*color0: rgb:00/00/00
+xterm*color1: rgb:a8/00/00
+xterm*color2: rgb:00/a8/00
+xterm*color3: rgb:a8/54/00
+xterm*color4: rgb:00/00/a8
+xterm*color5: rgb:a8/00/a8
+xterm*color6: rgb:00/a8/a8
+xterm*color7: rgb:a8/a8/a8
+xterm*color8: rgb:54/54/54
+xterm*color9: rgb:fc/54/54
+xterm*color10: rgb:54/fc/54
+xterm*color11: rgb:fc/fc/54
+xterm*color12: rgb:54/54/fc
+xterm*color13: rgb:fc/54/fc
+xterm*color14: rgb:54/fc/fc
+xterm*color15: rgb:fc/fc/fc
+
+! right hand side scrollbar...
+xterm*rightScrollBar: True
+xterm*ScrollBar: True
+
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: False
+
+! dzen2
+dzen2.font: xft:Powerline\ Pro\ for\ Powerline-8
+dzen2.foreground: #dcdccc
+dzen2.background: #151515
