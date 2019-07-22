@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # host: viper
-# Last modified: dimanche 21/07/2019 at 18:18:10
+# Last modified: lundi 22/07/2019 at 11:17:02
 # this is my config for herbstluftwm
 
 hc() {
@@ -24,7 +24,8 @@ hc keybind $Mod-Shift-q quit
 # hc keybind $Mod-Shift-r reload
 hc keybind $Mod1-space close
 hc keybind $Mod-Return spawn urxvt
-hc keybind $Mod-p spawn dmenu_run -l 15 -font "Anonymous Pro for Powerline 9" -nb '#151515' -sf '#151515' -sb '#dcdccc' -nf '#d0d0d0'
+# hc keybind $Mod-p spawn dmenu_run_hlwm -l 15 -font "Anonymous Pro for Powerline 9" -nb '#151515' -sf '#151515' -sb '#dcdccc' -nf '#d0d0d0'
+hc keybind $Mod-p spawn ~/bin/rofi.sh
 
 
 # basic movement
@@ -79,6 +80,16 @@ for i in ${!tag_names[@]} ; do
         hc keybind "$Mod-Shift-$key" move_index "$i"
     fi
 done
+
+hc keybind $Mod-0x22  use 1
+hc keybind $Mod-0xab  use 2
+hc keybind $Mod-0xbb  use 3
+hc keybind $Mod-0x28  use 4
+hc keybind $Mod-0x29  use 5
+hc keybind $Mod-0x40  use 6
+hc keybind $Mod-0x2b  use 7
+hc keybind $Mod-0x2d  use 8
+hc keybind $Mod-0x2f  use 9
 
 # cycle through tags
 hc keybind $Mod-period use_index +1 --skip-visible
@@ -164,7 +175,7 @@ hc unlock
 # do multi monitor setup here, e.g.:
 # hc set_monitors 1280x1024+0+0 1280x1024+1280+0
 # or simply:
-# hc detect_monitors
+hc detect_monitors
 
 # find the panel
 panel=~/.config/herbstluftwm/panel.sh
