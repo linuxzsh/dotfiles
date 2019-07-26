@@ -10,3 +10,6 @@ Os: *archlinux*
   7. browser: firefox
   
 and dark colors anywhere ;)
+
+![alt WM](https://raw.githubusercontent.com/linuxzsh/dotfiles/master/screenshot/my_window-manager.png)
+
