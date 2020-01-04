@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # host: viper
-# Last modified: samedi 28/12/2019 at 12:55:53
+# Last modified: samedi 04/01/2020 at 14:22:54
 # this is my config for herbstluftwm
 
 hc() {
@@ -115,10 +115,10 @@ hc keybind $Mod-0xab  use_index 1
 hc keybind $Mod-0xbb  use_index 2
 hc keybind $Mod-0x28  use_index 3
 hc keybind $Mod-0x29  use_index 4
-hc keybind $Mod-0x40  use_index 6
-hc keybind $Mod-0x2b  use_index 7
-hc keybind $Mod-0x2d  use_index 8
-hc keybind $Mod-0x2f  use_index 9
+hc keybind $Mod-0x40  use_index 5
+hc keybind $Mod-0x2b  use_index 6
+hc keybind $Mod-0x2d  use_index 7
+hc keybind $Mod-0x2f  use_index 8
 # move vers le tag#
 hc keybind $Mod-Shift-0x22  move_index 0
 hc keybind $Mod-Shift-0xab  move_index 1
@@ -212,7 +212,9 @@ hc rule instance="xfce4-panel" windowtype~'_NET_WM_WINDOW_TYPE_DOCK' manage=off 
 # pour toutes les petites fenêtres flotantes du panel xfce4
 hc rule instance="xfce4-panel" focus=on pseudotile=on
 hc rule instance="mpv" focus=on pseudotile=on
-
+# app in tag
+hc rule class=Chromium tag=2 index=1 focus=on 
+hc rule class=JDownloader tag=9 index=1 focus=on 
 hc set tree_style '╾│ ├└╼─┐'
 
 # unlock, just to be sure
@@ -249,3 +251,7 @@ hc keybind $Mod-Left  spawn herbst-move.py -1 empty
 hc keybind $Mod-Right spawn herbst-move.py +1 empty
 hc keybind $Mod-Up spawn herbst-move.py -1 full
 hc keybind $Mod-Down spawn herbst-move.py +1 full
+
+# startup app
+prgrep chromium || chromium &
+pgrep jdownloader || jdownloader &
