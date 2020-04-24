@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # host: viper
-# Last modified: samedi 04/01/2020 at 14:22:54
+# Last modified: dimanche 29/03/2020 at 18:53:21
 # this is my config for herbstluftwm
 
 hc() {
@@ -212,9 +212,11 @@ hc rule instance="xfce4-panel" windowtype~'_NET_WM_WINDOW_TYPE_DOCK' manage=off 
 # pour toutes les petites fenêtres flotantes du panel xfce4
 hc rule instance="xfce4-panel" focus=on pseudotile=on
 hc rule instance="mpv" focus=on pseudotile=on
+hc rule instance="keepassxc" focus=on pseudotile=on
+
 # app in tag
 hc rule class=Chromium tag=2 index=1 focus=on 
-hc rule class=JDownloader tag=9 index=1 focus=on 
+hc rule class=JDownloader tag=9
 hc set tree_style '╾│ ├└╼─┐'
 
 # unlock, just to be sure
@@ -238,7 +240,7 @@ panel=~/.config/herbstluftwm/epsi-rns/panel-dzen2.sh
 # done
 
 # panel xfce
-hc pad 0 22 0 0 0
+hc pad 0 26 0 0 0
 xfce4-panel --disable-wm-check --sm-client-disable &
 hc keybind $Mod-b spawn H_toggle_panel.sh
 
@@ -254,4 +256,5 @@ hc keybind $Mod-Down spawn herbst-move.py +1 full
 
 # startup app
 prgrep chromium || chromium &
-pgrep jdownloader || jdownloader &
+# sleep 5
+# pgrep jdownloader || jdownloader &
